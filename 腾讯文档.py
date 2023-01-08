@@ -19,7 +19,7 @@ class TengXunDocument():
         self.localPadId = local_pad_id
         self.headers = {
             'content-type': 'text/html; charset=utf-8',
-            'Cookie': 'pgv_pvid=1041635916; pac_uid=0_f2d05cc871bf7; RK=wsF9kD1UHS; ptcz=9d9f3c77379dddf000f547023a5e1df0e3f088094cc39682b2e8118c1090af9a; tvfe_boss_uuid=0e9b46f7e11eb26c; pgv_info=ssid=s9519869733; vversion_name=8.2.95; video_omgid=915bf187884dbd60; traceid=bd42f2d10e; TOK=bd42f2d10ed9fcd3; hashkey=bd42f2d1; fingerprint=19313025df9842c6833697475429364c59; ES2=77988b2337f4e040; backup_cdn_domain=docs.gtimg.com; optimal_cdn_domain=docs2.gtimg.com; low_login_enable=1; CheckKey=4e7a8a2d0f758fa6ffd94a2bXMoDp1; wx_appid=wxd45c635d754dbf59; openid=oDzL40AUwoxqOh-DwB-y9zJXAo5c; access_token=64_byyh0Ny4m0Pk9RN0gVHX0iLHlkp-n-mR9BU-o0NgOGKKF2T3cD_SXWPDOknpO0MbEjieZ6QZfvH2qxaAgtlKuKfKPV7QZLrEUBm2Q-V-67I; refresh_token=64_wP8kW5agvY6nTO0-yHX5E2aJIVjbj3KnqsWW3ZgosY77uuW20AUoq8JY2-Pm9OdNTk0ZnYkdmbVJ3DgoQMBBh6hg-6MJ0AtAE0IkJBmexZ8; DOC_SID=bb892b76257f497bb35fba82b78fc355683a7c1fadd94480a7e73f23e4f0ceb0; SID=bb892b76257f497bb35fba82b78fc355683a7c1fadd94480a7e73f23e4f0ceb0; loginTime=1673017905964'
+            'Cookie': '    '
         }
 
     def get_now_user_index(self):
