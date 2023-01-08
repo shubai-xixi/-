@@ -6,7 +6,7 @@ import time
 workbook = xlwt.Workbook()
 sheet = workbook.add_sheet("QQ转手机号")
 
-qwer=1580527199
+qwer=1580532115
 xxx=0
 count = 0
 zxc=0

@@ -10,13 +10,13 @@ zxc=0
 workbook = xlwt.Workbook()
 sheet = workbook.add_sheet("手QQ")
 while True:
-    qwer = 17542130567
+    qwer = 17542132380
     var = qwer + xxx
     url = f"https://zy.xywlapi.cc/qqphone?phone={var}" #接口1
     res = requests.get(url)
     text = res.text
     xxx = xxx + 1
-    print(xxx,qwer,text)
+    print(xxx,var,text)
     data = json.loads(text)
     for each in range(0, 1):
         if data['status'] == 500:
