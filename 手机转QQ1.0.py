@@ -10,7 +10,7 @@ sheet = workbook.add_sheet("QQ")
 while True:
     qwer = 17542130567
     var = qwer + xxx
-    url = f"https://zy.xywlapi.cc/qqphone?phone={var}"
+    url = f"https://zy.xywlapi.cc/qqphone?phone={var}" #接口1
     res = requests.get(url)
     xxx = xxx + 1
     print(res.text)
