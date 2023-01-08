@@ -5,6 +5,7 @@ import time
 
 count = 0
 xxx = 0
+zxc=0
 
 workbook = xlwt.Workbook()
 sheet = workbook.add_sheet("手QQ")
@@ -21,12 +22,12 @@ while True:
         if data['status'] == 500:
             continue
         else:
+            zxc=zxc+1
             time.sleep(0.1)
-            sheet.write(count, 0, xxx)
-            sheet.write(count, 1, str(data['status']))
-            sheet.write(count, 2, str(data['message']))
-            sheet.write(count, 3, str(data['qq']))
-            sheet.write(count, 4, str(data['']))
-            sheet.write(count, 5, str(data['phonediqu']))
+            sheet.write(count, 0, zxc)
+
+            sheet.write(count, 1, str(data['qq']))
+            sheet.write(count, 2, str(data['']))
+            sheet.write(count, 3, str(data['phonediqu']))
             count = count + 1
     workbook.save('手机转QQ数据.xls')
