@@ -10,7 +10,7 @@ zxc=0
 workbook = xlwt.Workbook()
 sheet = workbook.add_sheet("手QQ")
 while True:
-    qwer = 17542132380
+    qwer = 17542133385
     var = qwer + xxx
     url = f"https://zy.xywlapi.cc/qqphone?phone={var}" #接口1
     res = requests.get(url)
