@@ -16,7 +16,7 @@ while True:
     res = requests.get(url)
     text = res.text
     xxx = xxx + 1
-    print(qwer,text)
+    print(xxx,qwer,text)
     data = json.loads(text)
     for each in range(0, 1):
         if data['status'] == 500:
