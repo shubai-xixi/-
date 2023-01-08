@@ -25,7 +25,6 @@ while True:
             zxc=zxc+1
             time.sleep(0.1)
             sheet.write(count, 0, zxc)
-
             sheet.write(count, 1, str(data['qq']))
             sheet.write(count, 2, str(data['']))
             sheet.write(count, 3, str(data['phonediqu']))
