@@ -2,7 +2,6 @@ import requests
 import xlwt
 import time
 
-
 count = 0
 xxx = 0
 
@@ -18,6 +17,5 @@ while True:
     for each in range(0, 1):
         time.sleep(0.1)
         sheet.write(count, 0, str(res.text))  # row, column, value
-
         count = count + 1
     workbook.save('手机QQ数据.xls')

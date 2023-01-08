@@ -8,7 +8,6 @@ qwer=1580527186
 xxx=0
 count = 0
 while True:
-
     url = f"https://zy.xywlapi.cc/qqcx2022?qq={qwer}"
     res = requests.get(url)
     qwer=qwer+1
