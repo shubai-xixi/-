@@ -4,7 +4,7 @@ qwer=1   #图片ID
 asdf=1   #命名ID
 zxcv=1   #运行
 
-while True:
+while qwer<375:
     url =f'https://www.woku361.com/suiji/jiepai/{qwer}.jpg'
     qwer=qwer+1
     res = requests.get(url)
