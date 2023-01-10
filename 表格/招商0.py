@@ -24,7 +24,7 @@ def save_excel():
 	# read_html 函数返回的是一个 DataFrame 的list
 	cmb_table_list = pd.read_html(html_content)
 	# 通过打印每个 list 元素，确认我们所需要的是第二个，也就是下标 1
-	cmb_table_list[1].to_excel("tips2.xlsx")
+	cmb_table_list[1].to_excel("招商0.xlsx")
 
 def main():
 	save_excel()
@@ -61,7 +61,7 @@ def save_excel(filename):
 
 
 def main():
-	filename = "招商1.xlsx"
+	filename = "招商0.xlsx"
 	save_excel(filename)
 
 if __name__ == '__main__':

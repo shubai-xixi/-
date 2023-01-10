@@ -1,8 +1,10 @@
 import datetime
 import re
+
 import openpyxl
 import requests
 from lxml import etree
+
 
 def get_url_html(url):
     """
@@ -100,8 +102,7 @@ if __name__ == '__main__':
         print("获取第{0}页成功...".format(index))
 
     """这里是文件excel写入路径，你可以指定任意存在或者不存在的文件"""
-    write_excel(r"D:\666.xlsx", every_page_result_list)
-
+    write_excel(r"招商1.xlsx", every_page_result_list)
     end_time = datetime.datetime.now()
     print(f"耗时总共{(end_time - start_time).seconds}秒")
 
