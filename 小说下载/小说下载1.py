@@ -9,7 +9,7 @@ while True:
     url =f'https://yueliangwz40.buzz/{qwer}.html'
     qwer=qwer+1
     res = requests.get(url)
-    res.encoding = 'ISO-8559-1'
+    res.encoding = 'UTF-8'
     print(res)
     if res.status_code == 404:
         continue
