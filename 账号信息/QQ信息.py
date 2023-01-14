@@ -6,7 +6,7 @@ import time
 workbook = xlwt.Workbook()
 sheet = workbook.add_sheet("QQ信息")
 
-qwer=1580527186
+qwer=1580534509
 xxx=0
 count = 0
 zxc=0
