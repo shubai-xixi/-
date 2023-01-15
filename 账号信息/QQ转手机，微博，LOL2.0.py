@@ -36,4 +36,4 @@ def shuru(qwer):
             count = count + 1
         workbook.save('QQ转数据.xls')
 if __name__ =='__main__':
-    shuru(1580540452)    #多进程做准备
+    shuru(1580553080)    #多进程做准备
