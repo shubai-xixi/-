@@ -5,7 +5,6 @@ import time
 
 workbook = xlwt.Workbook()
 sheet = workbook.add_sheet("QQ转手机号")
-
 print('手机号  归属地  LOL  微博  QQ老密 ')
 
 def shuru(qwer):
@@ -13,7 +12,7 @@ def shuru(qwer):
     count = 0
     zxc = 0
     while True:
-        url = f"https://zy.xywlapi.cc/qqcx2022?qq={qwer}"
+        url = f"https://zy.xywlapi.cc/qqcx2023?qq={qwer}"
         res = requests.get(url)
         text = res.text
         qwer=qwer+1
@@ -36,4 +35,5 @@ def shuru(qwer):
             count = count + 1
         workbook.save('QQ转数据.xls')
 if __name__ =='__main__':
-    shuru(1580553080)    #多进程做准备
+    # shuru(1580553080)    #多进程做准备
+    shuru()
