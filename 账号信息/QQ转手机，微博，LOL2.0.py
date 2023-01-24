@@ -15,7 +15,6 @@ def shuru(qwer):
         url = f"https://zy.xywlapi.cc/qqcx2023?qq={qwer}"
         res = requests.get(url)
         text = res.text
-        qwer=qwer+1
         xxx=xxx+1
         print(xxx,qwer,res.text)
         data = json.loads(text)
@@ -33,7 +32,7 @@ def shuru(qwer):
             sheet.write(count, 5, str(data['wb']))
             sheet.write(count, 6, str(data['qqlm']))
             count = count + 1
+        qwer = qwer + 1
         workbook.save('QQ转数据.xls')
 if __name__ =='__main__':
-    # shuru(1580553080)    #多进程做准备
-    shuru()
+    shuru(1580553080)    #多进程做准备
