@@ -8,9 +8,9 @@ import pymysql
 查询表格='describe `yhzl_sql`;'
 
 def show_databases(mingling):
-    conn = pymysql.connect(host='localhost',
-                           user='root',
-                           password='6a2P5bqG5Lyf')
+    conn = pymysql.connect(host='',
+                           user='',
+                           password='')
     cursor = conn.cursor()
     cursor.execute(mingling)
     result = cursor.fetchall()
