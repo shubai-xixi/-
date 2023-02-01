@@ -4,7 +4,7 @@ import requests
 # c.execute("SELECT * FROM zhxx")
 # print(c.fetchall())
 a=""
-qwer=31890
+qwer=7003254
 xxx = 0
 count = 0
 while True:
