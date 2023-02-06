@@ -11,6 +11,8 @@ def cx():
         sql_l = sql+str(shuru)
         c.execute(sql_l)
         print(c.fetchone())
+        conn.commit()
+        conn.close()
 
     elif 10000000000 < shuru < 99999999999:
         conn = sqlite3.connect('账号')
@@ -19,7 +21,8 @@ def cx():
         sql_l = sql + str(shuru)
         c.execute(sql_l)
         print(c.fetchone())
-
+        conn.commit()
+        conn.close()
     else:
         print("错误")
     cx()
