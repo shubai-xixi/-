@@ -1,14 +1,26 @@
-import random
 import requests
+fgh=[]
 
-proxy = {
-    'http':'112.250.107.37:53281'
-}
+def shuru(daili):
+    proxies = {
+        'https':daili
+               }
+    url = "http://www.baidu.com/"
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36'
+    }
+    try:
+        response = requests.get(url, headers=headers, proxies=proxies, timeout=5)
+        print(response)
 
-url = 'https://www.ip138.com/'
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'
-}
-response = requests.get(url=url,headers=headers,proxies=proxy)
-with open('ip.html','w',encoding='utf-8') as f:
-    f.write(response.text)
+    except Exception as e:
+        print(f"请求失败，代理IP无效！{e}")
+    else:
+        print("请求成功，代理IP有效！")
+        fgh.append(daili)
+
+with open("IP.txt") as file:
+    for item in file:
+        print(item)
+        shuru(item)
+print(fgh)
